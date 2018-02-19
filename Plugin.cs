@@ -6,7 +6,7 @@ using Terraria;
 using TerrariaApi.Server;
 using System.Net.Http;
 
-namespace P
+namespace BanEvasionProtection
 {
     [ApiVersion(2, 1)]
     public class BanEvasionProtection : TerrariaPlugin
@@ -36,9 +36,9 @@ namespace P
 
             var responseString = await response.Content.ReadAsStringAsync();
 
-            int responseDouble;
+            int responseInt;
 
-            int.TryParse(responseString, out responseDouble);
+            int.TryParse(responseString, out responseInt);
 
             if (responseDouble == 1)
             {
