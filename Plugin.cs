@@ -42,7 +42,7 @@ namespace BanEvasionProtection
 
             if (responseDouble == 1)
             {
-                TShock.Players[args.Who].Disconnect("AntiProxy: Proxy connections are not permitted." + Environment.NewLine + "If you believe this is an error, contact a staff member on discord. https://discord.gg/HV8Amb");
+                TShock.Players[args.Who].Disconnect("AntiProxy: Proxy connections are not permitted.");
             }
 
             if (TShock.Players[args.Who].Name.Length > 20)
