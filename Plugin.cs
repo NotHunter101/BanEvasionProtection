@@ -40,7 +40,7 @@ namespace BanEvasionProtection
 
             int.TryParse(responseString, out responseInt);
 
-            if (responseDouble == 1)
+            if (responseInt == 1)
             {
                 TShock.Players[args.Who].Disconnect("AntiProxy: Proxy connections are not permitted.");
             }
